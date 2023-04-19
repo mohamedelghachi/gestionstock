@@ -34,4 +34,5 @@ Route::get('addarticle',[ArticleController::class, 'addarticle'])->name('addarti
 Route::post('storearticle',[ArticleController::class, 'storearticle'])->name('storearticle');
 Route::post('updatearticle',[ArticleController::class, 'updatearticle'])->name('updatearticle');
 Route::post('deletearticle',[ArticleController::class, 'deletearticle'])->name('deletearticle');
+Route::get('/articledelete/{id}',[ArticleController::class, 'articledelete'])->name('articledelete');
 Route::get('showarticle',[ArticleController::class, 'showarticle'])->name('showarticle');

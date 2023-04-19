@@ -75,6 +75,9 @@
                                                 <button type="button" class="editarticle btn btn-outline-warning"
                                                     article_id="{{ $article->id }}" data-bs-toggle="modal"
                                                     data-bs-target="#exampleModal">Edit</button>
+                                                <a class="btn btn-danger" onclick="return confirm('Are you sure?')"
+                                                    href="{{ route('articledelete', ['id' => $article->id]) }}"><i
+                                                        class="fa fa-trash"></i></a>
                                                 <button type="button" class="deletearticle btn btn-outline-danger"
                                                     article_id="{{ $article->id }}">Delete</button>
                                             </div>

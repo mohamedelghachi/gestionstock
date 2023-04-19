@@ -48,6 +48,13 @@ class ArticleController extends Controller
         // Encoding array in JSON format
         return json_encode($return_arr);
     }
+    public function articledelete($id)
+    {
+        $newArticle = Article::find($id);
+        $newArticle->delete();
+
+        return redirect('/showarticle');
+    }
 
     public function showarticle()
     {
