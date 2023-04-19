@@ -36,3 +36,7 @@ Route::post('updatearticle',[ArticleController::class, 'updatearticle'])->name('
 Route::post('deletearticle',[ArticleController::class, 'deletearticle'])->name('deletearticle');
 Route::get('/articledelete/{id}',[ArticleController::class, 'articledelete'])->name('articledelete');
 Route::get('showarticle',[ArticleController::class, 'showarticle'])->name('showarticle');
+
+Route::get('/contact', function () {
+    return view('contact');
+});
